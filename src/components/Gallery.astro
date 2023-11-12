@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+
+import art1 from '../../public/art1.jpg'
+import art2 from '../../public/art2.jpg'
+import art3 from '../../public/art3.jpg'
+import art4 from '../../public/art4.jpg'
+---
+
+<div class="mx-12">
+  <h2 class="my-24 text-xl text-center">Latest Art Picies</h2>
+  <div class="grid grid-cols-1 gap-24 xl:mx-48 xl:grid-cols-2">
+    <div class="relative group cursor-pointer">
+      <Image class='relative w-full z-10 transition-all rounded-lg group-hover:-translate-x-3' src={art1} alt='painting 1'/>
+      <div class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"></div>
+    </div>
+
+    <div class="relative group cursor-pointer">
+      <Image class='relative w-full z-10 transition-all rounded-lg group-hover:-translate-x-3' src={art2} alt='painting 2'/>
+      <div class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"></div>
+    </div>
+    <div class="relative group cursor-pointer">
+      <Image class='relative w-full z-10 transition-all rounded-lg group-hover:-translate-x-3' src={art3} alt='painting 3'/>
+      <div class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"></div>
+    </div>
+    <div class="relative group cursor-pointer">
+      <Image class='relative w-full z-10 transition-all rounded-lg group-hover:-translate-x-3' src={art4} alt='painting 4'/>
+      <div class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"></div>
+    </div>
+  </div>
+</div>
